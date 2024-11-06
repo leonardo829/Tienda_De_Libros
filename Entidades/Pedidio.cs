@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entidades
+﻿namespace Entidades
 {
-    public class Pedidio
+	public class Pedidio
     {
         public int ID_Pedido { get; set; }
         public int ID_Usuario { get; set; }
