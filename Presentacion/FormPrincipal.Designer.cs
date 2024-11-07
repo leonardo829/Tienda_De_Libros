@@ -28,12 +28,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "FormPrincipal";
+			dataGridViewLibros = new DataGridView();
+			((System.ComponentModel.ISupportInitialize)dataGridViewLibros).BeginInit();
+			SuspendLayout();
+			// 
+			// dataGridViewLibros
+			// 
+			dataGridViewLibros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridViewLibros.Location = new Point(75, 33);
+			dataGridViewLibros.Name = "dataGridViewLibros";
+			dataGridViewLibros.Size = new Size(404, 280);
+			dataGridViewLibros.TabIndex = 0;
+			// 
+			// FormPrincipal
+			// 
+			AutoScaleDimensions = new SizeF(7F, 15F);
+			AutoScaleMode = AutoScaleMode.Font;
+			ClientSize = new Size(800, 450);
+			Controls.Add(dataGridViewLibros);
+			Name = "FormPrincipal";
+			Text = "FormPrincipal";
+			Load += FormPrincipal_Load;
+			((System.ComponentModel.ISupportInitialize)dataGridViewLibros).EndInit();
+			ResumeLayout(false);
 		}
 
 		#endregion
+
+		private DataGridView dataGridViewLibros;
 	}
 }
